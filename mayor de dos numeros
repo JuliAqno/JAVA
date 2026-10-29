@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class NumeroMayor  {
+    public static void main(String[] args) {
+    System.out.print("Ingrese dos numeros enteros tal que Java imprima el mayor\n");
+    //crear un objeto scanner
+    Scanner scanner= new Scanner(System.in); 
+    System.out.print("Ingrese el primer numero: \n");
+    int numero1=scanner.nextInt(); 
+    System.out.print("Ingrese el segundo numero: \n");
+    int numero2=scanner.nextInt(); 
+    if(numero1>numero2){
+      System.out.print("El primer numero es el mayor\n");
+      }else{
+        System.out.print("El segundo numero es el mayor \n");
+        }
+    
+}
+}
