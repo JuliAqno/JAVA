@@ -1,0 +1,28 @@
+import java.util.Scanner; //importar la clase Scanner
+public class Promedio  {
+    public static void main(String[] args) {
+    //Crear un nuevo objeto Scanner 
+    Scanner scanner=new Scanner(System.in);
+    
+    //pedir y leer una cadena de texto 
+    System.out.print("Ingrese el nombre del estudiante: \n");
+    String nombre=scanner.nextLine();
+    
+    //pedir y leer un double
+    System.out.print("Ingrese la/s nota/s: \n");
+    double nota=scanner.nextDouble();
+    double nota2=scanner.nextDouble();
+    double nota3=scanner.nextDouble(); 
+    double resultado= (nota+nota2+nota3)/3;
+    if(resultado>=6) {
+      System.out.print(" Su nombre es "+nombre+ " y su nota es Aprobado\n");
+      }else{
+        System.out.print("Su nombre es "+nombre+ " y su nota es Desaprobado\n");
+         }
+  
+
+   
+    }
+}
+//Escribí un programa que declare las notas de tres exámenes de un alumno, calcule su promedio usando valores 
+//decimales (double),e imprima si el alumno aprobó (promedio mayor o igual a 6.0) 
