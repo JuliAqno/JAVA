@@ -1,0 +1,20 @@
+import java.util.Scanner; //importar la clase Scanner
+public class Promedio  {
+    public static void main(String[] args) {
+    //Crear un nuevo objeto Scanner 
+    Scanner scanner=new Scanner(System.in);
+    
+    //pedir y leer una cadena de texto 
+    System.out.print("Ingrese su Nombre: \n");
+    String nombre=scanner.nextLine();
+    
+    //pedir y leer un numero entero
+    System.out.print("Ingrese su edad: \n");
+    int edad=scanner.nextInt();
+
+    //mostrar por pantalla 
+    System.out.print("Su nombre es "+nombre+ " y su edad es "+edad); 
+
+        
+    }
+}
