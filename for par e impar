@@ -1,0 +1,18 @@
+
+public class NumerosPares  {
+    public static void main(String[] args) {
+    System.out.print("Bucle para calcular los numeos pares entre 1 y 100 \n");
+    for(int i=0; i <=100; i++){
+      if(i%2==0){
+        System.out.print("El numero "+i+ " es par\n");
+        }else{
+          System.out.print("El numero "+i+ " es impar\n");
+          }
+
+
+       }
+
+    }
+}
+//Escribí un programa en Java que use un bucle para calcular la suma de todos los números pares entre 1 y 100 
+//e imprima el resultado final
