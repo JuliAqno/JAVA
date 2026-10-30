@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class ConversorTemperatura {
+    public static void main(String[] args){
+    System.out.print("Ingrese una temperatura en grado Celsius tal que Java lo imprima en grados Fahrenheit.\n");
+    Scanner scanner= new Scanner(System.in);
+    System.out.print("Temperatura: \n");
+    int grado=scanner.nextInt();
+    double fahrenheit = (grado*9/5) + 32;
+    System.out.println("El resultado es "+fahrenheit+" grados Fahrenheit");
+}
+}
