@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class TablaMultiplicar {
+
+        public static void main(String[] args) {
+            System.out.print("Ingrese un numero entero tal que Java imprima la tabla de multiplicar\n");
+            int multiplicacion = 0;
+
+            // Crear un objeto scanner
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Ingrese el numero: \n");
+            int numero1 = scanner.nextInt();
+
+            // Ciclo for
+            for (int i = 1; i <= 10; i++) {
+                multiplicacion = numero1 * i;
+                // Usamos println para el salto de línea
+                System.out.println(numero1 + " x " + i + " = " + multiplicacion);
+            }
+
+
+        }
+    }
+
