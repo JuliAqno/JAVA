@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class ContadorNumeros {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Variables para llevar la cuenta
+        int positivos = 0;
+        int negativos = 0;
+        int ceros = 0;
+        
+        // Un bucle for que se repetirá exactamente 5 veces
+        for (int i = 1; i <= 5; i++) {
+            System.out.print("Ingrese el número " + i + ": ");
+            int num = scanner.nextInt();
+            
+            // Evaluamos el número ingresado
+            if (num > 0) {
+                positivos++; // Incrementa en 1 el contador de positivos
+            } else if (num < 0) {
+                negativos++; // Incrementa en 1 el contador de negativos
+            } else {
+                ceros++;     // Incrementa en 1 el contador de ceros
+            }
+        }
+        
+        // Mostramos el resumen final
+        System.out.println("\n--- RESULTADOS ---");
+        System.out.println("Cantidad de positivos: " + positivos);
+        System.out.println("Cantidad de negativos: " + negativos);
+        System.out.println("Cantidad de ceros: " + ceros);
+        
+        scanner.close();
+    }
+}
